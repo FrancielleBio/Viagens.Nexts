@@ -1,0 +1,47 @@
+.hero {
+  background: linear-gradient(135deg, #ecfeff, #eff6ff);
+  padding: 40px 24px;
+  border-radius: 22px;
+  display: grid;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: #0f766e;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #374151;
+  max-width: 700px;
+}
+
+.button {
+  width: fit-content;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.infoGrid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.infoCard {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.infoCard h2 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
