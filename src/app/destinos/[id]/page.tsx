@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { destinos } from "@/data/destinos";
@@ -15,8 +16,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function DestinoDetalhePage({ params }: DestinoDetalheProps) {
+export default async function DestinoDetalhePage({
+  params,
+}: DestinoDetalheProps) {
   const { id } = await params;
+
   const destino = destinos.find((item) => item.id === id);
 
   if (!destino) {
@@ -25,7 +29,14 @@ export default async function DestinoDetalhePage({ params }: DestinoDetalheProps
 
   return (
     <article className={styles.detail}>
-      <img className={styles.image} src={destino.imagem} alt={destino.nome} />
+      <Image
+        className={styles.image}
+        src={destino.imagem}
+        alt={destino.nome}
+        width={1000}
+        height={600}
+        priority
+      />
 
       <div className={styles.content}>
         <h1>{destino.nome}</h1>

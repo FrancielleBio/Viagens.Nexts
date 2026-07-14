@@ -11,7 +11,7 @@ export const destinos: Destino[] = [
   {
     id: "rio-de-janeiro",
     nome: "Rio de Janeiro",
-    imagem: "/images/rio.svg",
+    imagem: "/images/rio.jpg",
     localizacao: "Brasil",
     destaque: "Praias, Cristo Redentor e Pão de Açúcar",
     descricao:
@@ -20,7 +20,7 @@ export const destinos: Destino[] = [
   {
     id: "gramado",
     nome: "Gramado",
-    imagem: "/images/gramado.svg",
+    imagem: "/images/gramado.jpg",
     localizacao: "Brasil",
     destaque: "Clima europeu, gastronomia e romantismo",
     descricao:
@@ -29,7 +29,7 @@ export const destinos: Destino[] = [
   {
     id: "paris",
     nome: "Paris",
-    imagem: "/images/paris.svg",
+    imagem: "/images/paris.jpg",
     localizacao: "França",
     destaque: "Torre Eiffel, museus e cafés",
     descricao:
@@ -38,7 +38,7 @@ export const destinos: Destino[] = [
   {
     id: "tokyo",
     nome: "Tokyo",
-    imagem: "/images/tokyo.svg",
+    imagem: "/images/tokyo.jpg",
     localizacao: "Japão",
     destaque: "Tecnologia, templos e cultura pop",
     descricao:
